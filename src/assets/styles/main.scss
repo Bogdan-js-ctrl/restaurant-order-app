@@ -1,0 +1,97 @@
+@use 'variables' as *;
+@use 'animations' as *;
+@use 'bootstrap/scss/bootstrap' with (
+  $font-family-sans-serif: $font-family-sans-serif,
+  $primary: $primary,
+  $secondary: $secondary,
+  $light: $light,
+  $dark: $dark,
+  $success: $success,
+  $warning: $warning,
+  $danger: $danger
+);
+
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $light;
+  color: $dark;
+}
+
+.navbar {
+  background-color: $dark !important;
+  
+  .navbar-brand, .nav-link {
+    color: $light !important;
+    
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+.menu-item-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .btn-add-to-cart {
+    background-color: $primary;
+    border: none;
+    
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+}
+
+.cart-item {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: rgba($secondary, 0.05);
+  }
+  
+  .btn-remove {
+    color: $danger;
+    background: none;
+    border: none;
+    
+    &:hover {
+      color: darken($danger, 10%);
+    }
+  }
+}
+
+.checkout-form {
+  .form-control {
+    &:focus {
+      border-color: $secondary;
+      box-shadow: 0 0 0 0.25rem rgba($secondary, 0.25);
+    }
+  }
+  
+  .btn-submit {
+    background-color: $success;
+    border: none;
+    
+    &:hover {
+      background-color: darken($success, 10%);
+    }
+  }
+}
+
+.order-success {
+  .success-icon {
+    color: $success;
+    font-size: 5rem;
+  }
+}
