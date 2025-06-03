@@ -28,4 +28,4 @@ A Single Page Application for online food ordering built with Vue 3, TypeScript,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/restaurant-order-app.git
+   git clone https://github.com/Bogdan-js-ctrl/restaurant-order-app
