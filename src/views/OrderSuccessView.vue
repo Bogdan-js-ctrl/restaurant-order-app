@@ -6,8 +6,8 @@
         </div>
         <h1 class="display-4 mb-4">Order Placed Successfully!</h1>
         <p class="lead mb-4">Thank you for your order. We've received it and will start preparing your food shortly.</p>
-        <p class="mb-4">Your order number is: <strong>#{{ orderId }}</strong></p>
-        <p class="mb-4">Estimated delivery time: <strong>30-45 minutes</strong></p>
+        <p class="mb-4">ваш номер заказа: <strong>#{{ orderId }}</strong></p>
+        <p class="mb-4">Время готовки: <strong>30-45 минут</strong></p>
         <router-link to="/" class="btn btn-primary btn-lg">
           Back to Home
         </router-link>

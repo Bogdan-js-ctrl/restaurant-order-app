@@ -6,7 +6,6 @@ export const useCartStore = defineStore('cart', () => {
   const cartItems = ref<CartItem[]>([])
   const isInitialized = ref(false)
 
-  // Initialize from localStorage
   const initialize = () => {
     if (isInitialized.value) return
     
@@ -17,12 +16,10 @@ export const useCartStore = defineStore('cart', () => {
     isInitialized.value = true
   }
 
-  // Save to localStorage whenever cart changes
   const saveToLocalStorage = () => {
     localStorage.setItem('restaurantCart', JSON.stringify(cartItems.value))
   }
 
-  // Add item to cart
   const addToCart = (item: MenuItem) => {
     initialize()
     
@@ -35,7 +32,6 @@ export const useCartStore = defineStore('cart', () => {
     saveToLocalStorage()
   }
 
-  // Remove item from cart
   const removeFromCart = (itemId: number) => {
     initialize()
     
@@ -46,7 +42,6 @@ export const useCartStore = defineStore('cart', () => {
     }
   }
 
-  // Update item quantity
   const updateQuantity = (itemId: number, newQuantity: number) => {
     initialize()
     
@@ -61,18 +56,15 @@ export const useCartStore = defineStore('cart', () => {
     }
   }
 
-  // Clear cart
   const clearCart = () => {
     cartItems.value = []
     saveToLocalStorage()
   }
 
-  // Calculate total
   const total = computed(() => {
     return cartItems.value.reduce((sum, item) => sum + (item.price * item.quantity), 0)
   })
 
-  // Count of items
   const itemCount = computed(() => {
     return cartItems.value.reduce((count, item) => count + item.quantity, 0)
   })

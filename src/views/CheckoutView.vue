@@ -6,23 +6,23 @@
         <div class="col-lg-6">
           <div class="card mb-4">
             <div class="card-body">
-              <h4 class="card-title mb-4">Delivery Information</h4>
+              <h4 class="card-title mb-4">Информация о доставке</h4>
               
               <form @submit.prevent="submitOrder">
                 <BaseInput
                   id="name"
-                  label="Full Name"
+                  label="Полное Имя"
                   v-model="form.name"
                   :error="errors.name"
-                  placeholder="John Doe"
+                  placeholder="Богдан"
                 />
                 
                 <BaseInput
                   id="phone"
-                  label="Phone Number"
+                  label="Телефон"
                   v-model="form.phone"
                   :error="errors.phone"
-                  placeholder="+1234567890"
+                  placeholder="+7999-999-99-99"
                 />
                 
                 <BaseInput
