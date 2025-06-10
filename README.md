@@ -1,31 +1,66 @@
-# Restaurant Order SPA
+# Одностраничное приложение для заказа в ресторане (SPA)
 
-A Single Page Application for online food ordering built with Vue 3, TypeScript, and Vite.
+Одностраничное приложение для онлайн-заказа еды, созданное с использованием Vue 3, TypeScript и Vite.
 
-## Features
+## Функциональность
 
-- View restaurant menu with categories
-- Filter menu items by category
-- Add items to cart
-- View and modify cart contents
-- Checkout with form validation
-- Order confirmation page
-- Cart persistence using localStorage
-- Responsive design
-- Animations for better UX
+•   Просмотр меню ресторана по категориям
 
-## Technologies Used
+•   Фильтрация позиций меню по категориям
 
-- Vue 3
-- TypeScript
-- Vite
-- Pinia (state management)
-- Vue Router
-- Bootstrap 5
-- SCSS
+•   Добавление товаров в корзину
 
-## How to Run Locally
+•   Просмотр и изменение содержимого корзины
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Bogdan-js-ctrl/restaurant-order-app
+•   Оформление заказа с валидацией формы
+
+•   Страница подтверждения заказа
+
+•   Сохранение корзины с помощью LocalStorage
+
+•   Адаптивный дизайн (Responsive design)
+
+•   Анимации для улучшения пользовательского опыта (UX)
+
+## Используемые технологии
+
+•   Vue 3
+
+•   TypeScript
+
+•   Vite
+
+•   Pinia (state management)
+
+•   Vue Router
+
+•   Bootstrap 5
+
+•   SCSS
+
+## Как запустить локально
+
+1. Клонируйте репозиторий:
+    bash
+    git clone https://github.com/Bogdan-js-ctrl/restaurant-order-app
+    
+2. Перейдите в директорию проекта:
+
+bash
+cd restaurant-order-app
+
+3. Установите зависимости:
+
+bash
+npm install
+# или
+yarn
+
+4. Запустите сервер для разработки:
+
+bash
+npm run dev
+# или
+yarn dev
+
+    Приложение будет доступно по адресу `http://localhost:5173/restaurant-order-app/` (или другому порту, указанному в консоли).
